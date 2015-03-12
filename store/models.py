@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Book(models.Model):
+    id = models.IntegerField(primary_key=True)
     name = models.CharField(max_length=2048)
     description = models.TextField(null=True)
     isbn = models.CharField(max_length=13)
